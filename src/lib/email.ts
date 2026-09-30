@@ -9,10 +9,10 @@ const FOOTER_HTML = `
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td style="padding: 32px 40px; border-top: 1px solid #c9a84c;">
-          <p style="margin: 0 0 4px; font-family: Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.6; color: #1a2744;">
+          <p style="margin: 0 0 4px; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.6; color: #1a2744;">
             Warm regards,
           </p>
-          <p style="margin: 16px 0 0; font-family: Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.7; color: #1a2744;">
+          <p style="margin: 16px 0 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.7; color: #1a2744;">
             <strong>Dr. Sanjay Goel</strong><br />
             Secretary, SXCCAA – West Zone Chapter<br />
             Contact: 9321154661
@@ -61,6 +61,7 @@ export function generateEmailHTML(
   </noscript>
   <![endif]-->
   <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
@@ -72,7 +73,7 @@ export function generateEmailHTML(
     }
   </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f5f0e8; font-family: Georgia, 'Times New Roman', serif;">
+<body style="margin: 0; padding: 0; background-color: #f5f0e8; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;">
   <center style="width: 100%; background-color: #f5f0e8;">
     <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
@@ -86,7 +87,7 @@ export function generateEmailHTML(
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
               <td class="header-cell" style="background-color: #0f1d3a; padding: 32px 40px; text-align: center;">
-                <p style="margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 13px; letter-spacing: 3px; color: #c9a84c; text-transform: uppercase;">
+                <p style="margin: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 13px; letter-spacing: 3px; color: #c9a84c; text-transform: uppercase;">
                   SXCCAA
                 </p>
                 <p style="margin: 6px 0 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; letter-spacing: 1.5px; color: #a0aec0; text-transform: uppercase;">
@@ -109,7 +110,7 @@ export function generateEmailHTML(
         <td style="padding: 0;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
-              <td class="content-cell" style="background-color: #ffffff; padding: 40px 40px 32px; font-family: Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.8; color: #2d3748;">
+              <td class="content-cell" style="background-color: #ffffff; padding: 40px 40px 32px; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.8; color: #2d3748;">
                 ${personalizedBody}
               </td>
             </tr>
