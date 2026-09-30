@@ -140,17 +140,54 @@ export default function EmailComposer({
         </div>
       </div>
 
-      {/* Footer Preview */}
-      <div className="mt-4 p-4 rounded-lg bg-navy-50/50 border border-navy-100">
-        <p className="text-xs font-semibold text-navy-500 uppercase tracking-wider mb-3">
-          Auto-appended Footer
-        </p>
-        <div className="text-sm text-navy-600 leading-relaxed border-t border-gold-500/30 pt-3">
-          <p className="text-navy-500 italic mb-2">Warm regards,</p>
-          <p className="font-semibold text-navy-700">Dr. Sanjay Goel</p>
-          <p className="text-navy-500">Secretary, SXCCAA – West Zone Chapter</p>
-          <p className="text-navy-500">Contact: 9321154661</p>
-          <a href="https://www.sxccaa.org/" className="inline-block mt-2 text-gold-600 hover:text-gold-700 text-sm font-medium" target="_blank" rel="noopener noreferrer">
+      {/* Auto-appended Content Preview */}
+      <div className="mt-4 rounded-lg border border-navy-100 overflow-hidden">
+        <div className="px-4 py-3 bg-navy-50/50 border-b border-navy-100">
+          <p className="text-xs font-semibold text-navy-500 uppercase tracking-wider">
+            Auto-appended after your message
+          </p>
+        </div>
+
+        {/* Programme Schedule Preview */}
+        <div className="px-4 py-3 bg-navy-900 text-center">
+          <p className="text-[10px] font-semibold text-gold-500 uppercase tracking-[2px]">Programme Schedule</p>
+        </div>
+        <div className="divide-y divide-navy-50">
+          {[
+            ['9:15 AM', 'Registration & Meet and Greet'],
+            ['10:30 AM', 'Lighting of the Lamp'],
+            ['10:40 AM', 'Address by Rev. Dr. Dominic Savio, SJ'],
+            ['11:05 AM', 'Special Address by Chief Guest Mr. Amit Haralka'],
+            ['11:35 AM', 'Keynote Address by Mr. Robin Banerjee'],
+            ['12:05 PM', 'Fireside Chat with Mr. Pankaj Tibrewal'],
+            ['1:15 PM', 'Gala Lunch and Fellowship'],
+            ['2:15 PM', 'SHAKTI SAMMAN'],
+            ['4:25 PM', 'High Tea and Fellowship'],
+          ].map(([time, desc], i) => (
+            <div key={i} className={`flex gap-3 px-4 py-2 text-xs ${i % 2 ? 'bg-ivory-50' : 'bg-white'}`}>
+              <span className="text-gold-600 font-semibold w-16 shrink-0">{time}</span>
+              <span className="text-navy-600">{desc}</span>
+            </div>
+          ))}
+          <div className="px-4 py-1.5 bg-navy-50/30 text-center">
+            <span className="text-[10px] text-navy-400">+ 5 more programme items</span>
+          </div>
+        </div>
+
+        {/* Special Invitee */}
+        <div className="px-4 py-3 bg-navy-900 text-center">
+          <p className="text-[10px] text-gold-500 uppercase tracking-[2px] mb-1">Special Invitee</p>
+          <p className="text-sm font-semibold text-white">Ms. Ananya Birla</p>
+          <p className="text-[11px] text-navy-300">Director at Aditya Birla Group</p>
+        </div>
+
+        {/* Footer Signature */}
+        <div className="px-4 py-3 bg-white border-t border-gold-500/20">
+          <p className="text-xs text-navy-400 italic mb-1.5">Warm regards,</p>
+          <p className="text-xs font-semibold text-navy-700">Dr. Sanjay Goel</p>
+          <p className="text-xs text-navy-500">Secretary, SXCCAA – West Zone Chapter</p>
+          <p className="text-xs text-navy-500">Contact: 9321154661</p>
+          <a href="https://www.sxccaa.org/" className="inline-block mt-2 text-gold-600 hover:text-gold-700 text-xs font-medium" target="_blank" rel="noopener noreferrer">
             Visit SXCCAA Website →
           </a>
         </div>
